@@ -5,9 +5,9 @@ const path = require("path");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
 
-if (process.env.NODE_ENV !== "production") {
-  require("dotenv").config({ path: "config/config.env" });
-}
+// if (process.env.NODE_ENV !== "production") {
+require("dotenv").config({ path: "config/config.env" });
+// }
 
 // Using Middlewares
 app.use(express.json({ limit: "50mb" }));
