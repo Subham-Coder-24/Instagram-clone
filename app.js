@@ -18,7 +18,5 @@ const user = require("./routes/user");
 // Using Routes
 app.use("/api/v1", post);
 app.use("/api/v1", user);
-app.get("/", (req, res) => {
-  res.send({ message: "Server is working fine" });
-});
+
 module.exports = app;
